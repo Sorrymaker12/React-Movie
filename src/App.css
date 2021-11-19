@@ -1,0 +1,62 @@
+* {
+	font-size: 2vh;
+}
+
+body {
+	background-color: black;
+	color: white;
+}
+
+.movie-app > .row {
+	overflow-x: auto;
+	flex-wrap: nowrap;
+}
+
+.movie-poster {
+	height: auto;
+	width: auto;
+}
+
+.searchbox {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: 0;
+	width: 400px;
+}
+
+.image-container {
+	position: relative;
+	transition: transform 0.2s;
+}
+
+.image-container:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.image-container:hover .overlay {
+	opacity: 1;
+}
+
+.overlay {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	transition: 0.5s ease;
+	opacity: 0;
+	bottom: 0;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+}
+
+.add-fav {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+}
